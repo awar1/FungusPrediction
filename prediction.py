@@ -1,4 +1,3 @@
-import os
 import cv2 as cv
 from sklearn.model_selection import KFold, cross_val_score, train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -43,4 +42,3 @@ def fungus_Prediction(path):
         2:'Trichoderma',
         3:'Verticillium'
     }.get(wynik[0],'none') 
-# print(fungus_Prediction(path))

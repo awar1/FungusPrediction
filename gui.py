@@ -1,8 +1,10 @@
+import os
 from pathlib import Path
+import sys
 import PySimpleGUI as sg
 from prediction import fungus_Prediction
-sg.theme_background_color("#F0F0F0")
 
+sg.theme_background_color("#F0F0F0")
 
 
 col1=[[sg.Image('home_logo.png',background_color='#F0F0F0')],[sg.Text("",background_color='#F0F0F0', key="-Output-", font=40)]]
@@ -23,3 +25,4 @@ while True:             # Event Loop
             result = "Fungus on a photo is {}".format(fungus)
             window["-Output-"].update(result, text_color="black")
 window.Close()
+
